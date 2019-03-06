@@ -235,17 +235,21 @@ img {
 
 .about-content {
     display: grid;
-    grid-template-columns: 1px 20% 59% 1px;
+    grid-template-columns: 9px 20% 59% 10px;
     grid-template-rows: 100%;
     align-items: center;
     justify-content: center;
 }
 
+
+
+
 .name {
     font-family: "Maven Pro";
-    font-size: 12pt;
+    font-size: 15px;
     color: rgba(215, 252, 245, 255);
     text-align: justify;
+    margin-bottom: 25px;
 }
 
 .specialty {
@@ -255,23 +259,28 @@ img {
     font-size: 10pt;
     color: rgba(32, 129, 109, 255);
     text-align: justify;
+    padding-bottom: 5px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
 }
 
 .text-about p {
-    margin-top: 4%;
-    margin-right: 3%;
+    margin-top: 0;
+    margin-bottom: 36px;
     font-family: Lato;
     font-size: 9pt;
-    line-height: 170%;
+    line-height: 190%;
     color: rgba(215, 252, 245, 255);
     text-align: justify;
+    width: 582px;
 }
 
 .social {
     display: grid;
     grid-template-columns: repeat(6, 24px);
     justify-content: end;
-    margin-right: 4%;
+    margin-right: 2%;
+    margin-bottom: 18px;
 }
 
 .social img {
@@ -280,6 +289,9 @@ img {
 
 .about-img {
     margin-left: 7px;
+    padding-top: 11px;
+    padding-bottom: 0px;
+    padding-right: 5px;
 }
 
 .about-info {
@@ -292,6 +304,7 @@ img {
     background-color: #219d84;
     width: 1px;
     height: 90%;
+    margin-left: 8px;
 }
 
 .about-content::before {
@@ -300,6 +313,7 @@ img {
     background-color: #219d84;
     width: 1px;
     height: 90%;
+    margin-right: 4px;
 }
 
 .form {
