@@ -440,6 +440,7 @@ footer {
     color: rgba(69, 69, 69, 255);
 }
 footer p{
-    margin-top: 10px;
-    margin-left: 20px;
+    margin-top: 18px;
+    margin-left: 37px;
+    font-size: 11px;
 }
