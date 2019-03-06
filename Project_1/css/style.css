@@ -1,0 +1,431 @@
+.grid {
+    height: 1720px;
+    display: grid;
+    grid-template-areas: "head" "main" "footer";
+    justify-content: center;
+    grid-template-columns: 1020px;
+    grid-template-rows: 89px 1595px 43px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    grid-area: head;
+    display: grid;
+    grid-template-areas: "menu" "triangle";
+    grid-template-rows: 63px 26px;
+}
+
+.menu {
+    grid-area: menu;
+    background-color: rgb(50, 50, 50);
+    display: grid;
+    grid-template-columns: repeat(2, 6.95%) 10% repeat(2,6.95%);
+    align-items: center;
+    justify-content: center;
+}
+
+.menu a:hover{
+    color:  rgba(46, 179, 152, 255);
+}
+
+
+
+.menu div {
+    margin-top: -2px;
+}
+
+.logo {
+    padding: 6px;
+    justify-self: center;
+    z-index:10;
+}
+
+.items {
+    margin-bottom: 10px;
+    font-family: Lato;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    font-size: 9px;
+    text-align: center;
+}
+.menu .right{
+    margin-right: 5px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 26px 45.5px 0 45.5px;
+    border-color: #323232 transparent transparent transparent;
+    justify-self: center;
+    grid-area: triangle;
+}
+
+.triangle:before {
+    display: inline-block;
+    height: 1px;
+    margin-left: -467px;
+    margin-top: -80px;
+    margin-bottom: 25px;
+    content: " ";
+    position: relative;
+    text-shadow: none;
+    background-color: rgb(228, 233, 235);
+    width: 400px;
+    z-index: 1;
+}
+
+.triangle:after {
+    display: inline-block;
+    height: 1px;
+    margin-left: 70px;
+    margin-top: -32px;
+    margin-bottom: 300px;
+    content: " ";
+    position: relative;
+    text-shadow: none;
+    background-color: rgb(228, 233, 235);
+    width: 400px;
+    z-index: 10;
+}
+
+main {
+    display: grid;
+    grid-area: main;
+    grid-template-areas: "banner" "about" "form";
+    grid-template-rows: 43.49% 341px 564px;
+}
+
+.banner {
+    display: grid;
+    grid-area: banner;
+    background-color: white;
+    grid-template-rows: 95% 5%;
+}
+
+.banner-img {
+    display: grid;
+    background-color: white;
+    grid-template-areas: "img-first"
+                         "img-second"
+                         "img-third";
+}
+
+.img-first {
+    margin-top: 5.6%;
+    justify-self: center;
+    grid-area: img-first;
+}
+
+.img-second {
+    margin-top: -9.70%;
+    justify-self: center;
+    grid-area: img-second;
+}
+
+.img-third {
+    margin-top: -9.70%;
+    justify-self: center;
+    grid-third: img-third;
+}
+
+img {
+    padding: 8px;
+
+}
+
+.banner-img img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.img-first:after {
+    display: inline-block;
+    height: 100px;
+    margin-left: 8px;
+    margin-bottom: 60px;
+    content: " ";
+    position: relative;
+    text-shadow: none;
+    background-color: rgb(228, 233, 235);
+    width: 2px;
+    z-index: 1;
+}
+
+.img-first:before {
+    display: inline-block;
+    height: 100px;
+    margin-right: 8px;
+    margin-bottom: 60px;
+    content: " ";
+    position: relative;
+    text-shadow: none;
+    background-color: rgb(228, 233, 235);
+    width: 1px;
+    z-index: 1;
+}
+
+.img-third::after {
+    display: inline-block;
+    height: 100px;
+    margin-left: 8px;
+    margin-bottom: 60px;
+    content: " ";
+    position: relative;
+    text-shadow: none;
+    background-color: rgb(228, 233, 235);
+    width: 2px;
+    z-index: 1;
+}
+
+.img-third:before {
+    display: inline-block;
+    height: 100px;
+    margin-right: 8px;
+    margin-bottom: 60px;
+    content: " ";
+    position: relative;
+    text-shadow: none;
+    background-color: rgb(228, 233, 235);
+    width: 1px;
+    z-index: 1;
+}
+
+.banner-foot {
+    justify-content: start;
+    display: grid;
+    grid-template-columns: repeat(6, 9px);
+    margin-left: 30px;
+    margin-top: 7px;
+}
+
+.banner-foot .foot-line {
+    width: 960px;
+    height: 1px;
+    background-color: rgb(228, 233, 235);;
+}
+
+.banner-items:hover {
+    background: rgb(139, 135, 132);
+}
+
+.banner-foot div {
+    display: inline;
+    width: 6px;
+    height: 5px;
+    background-color: rgb(221, 210, 197);
+}
+
+.about {
+    display: grid;
+    grid-area: about;
+    background-color: rgb(46, 179, 152);
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    width: 100%;
+
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1px 20% 59% 1px;
+    grid-template-rows: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.name {
+    font-family: "Maven Pro";
+    font-size: 12pt;
+    color: rgba(215, 252, 245, 255);
+    text-align: justify;
+}
+
+.specialty {
+    font-family: "Maven Pro";
+    margin-top: -3%;
+    line-height: 15%;
+    font-size: 10pt;
+    color: rgba(32, 129, 109, 255);
+    text-align: justify;
+}
+
+.text-about p {
+    margin-top: 4%;
+    margin-right: 3%;
+    font-family: Lato;
+    font-size: 9pt;
+    line-height: 170%;
+    color: rgba(215, 252, 245, 255);
+    text-align: justify;
+}
+
+.social {
+    display: grid;
+    grid-template-columns: repeat(6, 24px);
+    justify-content: end;
+    margin-right: 4%;
+}
+
+.social img {
+    padding: 0px;
+}
+
+.about-img {
+    margin-left: 7px;
+}
+
+.about-info {
+    margin-left: 5px;
+}
+
+.about-content::after {
+    display: inline-block;
+    content: " ";
+    background-color: #219d84;
+    width: 1px;
+    height: 90%;
+}
+
+.about-content::before {
+    display: inline-block;
+    content: " ";
+    background-color: #219d84;
+    width: 1px;
+    height: 90%;
+}
+
+.form {
+    display: grid;
+    grid-area: form;
+    grid-template-areas: "form-head ." "form-input form-info";
+    grid-template-columns: 59% 20%;
+    grid-template-rows: 1fr 5fr;
+    background-color: rgb(50, 50, 50);
+    justify-content: center;
+    padding-top: 5%;
+}
+
+.form-head {
+    grid-area: form-head;
+}
+
+.form-head h1 {
+    margin-bottom: 0px;
+    font-family: "Maven Pro";
+    color: rgba(224, 224, 224, 255);
+}
+
+.form-head h3 {
+    margin-top: 0px;
+    font-family: "Maven Pro";
+    color: rgba(224, 224, 224, 255);
+}
+
+.form-info {
+    color: rgba(224, 224, 224, 255);
+    font-family: Lato;
+    line-height: 170%;
+    word-spacing: 0.40em;
+
+}
+
+.form-contact {
+    grid-template-rows: 20% 20% 20%;
+}
+
+.form-contact div {
+    display: grid;
+    grid-template-columns: 20% 80%;
+
+}
+
+.form-contact div img {
+    align-self: center;
+    justify-self: center;
+}
+
+.form-contact p {
+    margin: 0;
+}
+
+.form-name, .form-email, .form-subject, textarea {
+    background-color: #454545;
+    border-radius: 3px;
+    border: none;
+}
+
+.form-name::-webkit-input-placeholder, .form-email::-webkit-input-placeholder, .form-subject::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #bebebe;
+    padding-left: 10px;
+    font-family: Lato;
+}
+
+textarea::-webkit-input-placeholder {
+    padding-top: 7px;
+}
+
+.form-name::-moz-placeholder, .form-email::-moz-placeholder, .form-subject::-moz-placeholder, textarea::-moz-placeholder {
+    color: #bebebe;
+    padding-left: 10px;
+    font-family: Lato;
+}
+
+/* Firefox 19+ */
+.form-name:-moz-placeholder, .form-email:-moz-placeholder, .form-subject:-moz-placeholder, textarea:-moz-placeholder {
+    color: #bebebe;
+    padding-left: 10px;
+    font-family: Lato;
+}
+
+/* Firefox 18- */
+.form-name:-ms-input-placeholder, .form-email:-ms-input-placeholder, .form-subject:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: #bebebe;
+    padding-left: 10px;
+    font-family: Lato;
+}
+
+.form-buttom {
+    width: 90px;
+    height: 37px;
+    justify-self: end;
+    background-color: #2eb398;
+    border: none;
+    font-family: Lato;
+    text-transform: uppercase;
+    color: rgba(215, 252, 245, 255);
+    font-weight: 700;
+}
+
+.form-input {
+    padding-right: 5%;
+    grid-area: form-input;
+}
+
+.form-info {
+    grid-area: form-info;
+}
+
+.form-input {
+    display: grid;
+    grid-template-rows: repeat(3, 8%) 20% 10%;
+    grid-row-gap: 3%;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(34, 34, 34);
+    font-family: "Maven Pro";
+    color: rgba(69, 69, 69, 255);
+}
+footer p{
+    margin-top: 10px;
+    margin-left: 20px;
+}
