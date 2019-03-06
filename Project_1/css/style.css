@@ -332,12 +332,17 @@ img {
 }
 
 .form-head h1 {
+    margin-left: 15px;
+    margin-top: 9px;
+    font-size: 30px;
     margin-bottom: 0px;
     font-family: "Maven Pro";
     color: rgba(224, 224, 224, 255);
 }
 
 .form-head h3 {
+    margin-left: 15px;
+    font-size: 18px;
     margin-top: 0px;
     font-family: "Maven Pro";
     color: rgba(224, 224, 224, 255);
@@ -346,11 +351,18 @@ img {
 .form-info {
     color: rgba(224, 224, 224, 255);
     font-family: Lato;
-    line-height: 170%;
+    line-height: 150%;
     word-spacing: 0.40em;
+    margin-left: 12px;
 
 }
 
+.form-info p{
+    margin-top: -10px;
+    font-size: 11px;
+     word-spacing: 3px;
+    text-align: justify;
+}
 .form-contact {
     grid-template-rows: 20% 20% 20%;
 }
@@ -380,6 +392,7 @@ img {
     color: #bebebe;
     padding-left: 10px;
     font-family: Lato;
+    font-size: 12px;
 }
 
 textarea::-webkit-input-placeholder {
@@ -419,7 +432,8 @@ textarea::-webkit-input-placeholder {
 }
 
 .form-input {
-    padding-right: 5%;
+    margin-left: 15px;
+    padding-right: 5px;
     grid-area: form-input;
 }
 
@@ -429,8 +443,8 @@ textarea::-webkit-input-placeholder {
 
 .form-input {
     display: grid;
-    grid-template-rows: repeat(3, 8%) 20% 10%;
-    grid-row-gap: 3%;
+    grid-template-rows: repeat(3, 9%) 35% 10%;
+    grid-row-gap: 3.5%;
 }
 
 footer {
